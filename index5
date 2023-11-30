@@ -1,7 +1,7 @@
 <HTML>
     <head>
    
-   <title> Create a sentence!</title>
+   <title> Make a Phrase!</title>
     </head>
     <style>
    body {
@@ -33,14 +33,14 @@ grid-column-start: 2;
 grid-column-end: 3;     
  }
 
- .addtoM {
+ .addtoN {
 grid-row-start: 1;
 grid-row-end: 2;
 grid-column-start: 3;
 grid-column-end: 4;     
  }
 
- .addtoE {
+ .addtoP {
 grid-row-start: 1;
 grid-row-end: 2;
 grid-column-start: 4;
@@ -90,7 +90,7 @@ document.getElementById("messagecenter").innerHTML = memory ;
 }
 
 
-function addtoM(){
+function addtoN(){
 whatTheyTyped = document.getElementById("letterinput").value;
 stringLength = whatTheyTyped.lenght;
 memory = whatTheyTyped + memory;
@@ -100,7 +100,7 @@ document.getElementById("messagecenter").innerHTMl = memory;
 
 
 
-function addtoE() {
+function addtoP() {
 whatTheyTyped = document.getElementById("letterinput").value;
 stringlength = whatTheyTyped.lenght;
 memory = memory + whatTheyTyped;
@@ -115,7 +115,7 @@ document.getElementById("messagecenter").innerHTML = memory;
 }
 
 
-function deletefromE (){
+function deletefromP (){
 whatTheyTyped = document.getElementById("letterinput").value;
 memory = memory.substring(0, memory.length - 1);
 document.getElementById("messagecenter").innerHTML = memory;
@@ -172,14 +172,14 @@ document.getElementById("messagecenter").innerHTML = memory;
 </div>
 
 
-<div class = "addtoM"> 
-<button onclick = "addtoM ()"> Add to middle</button>
+<div class = "addtoN"> 
+<button onclick = "addtoN ()"> Add to middle</button>
 
 </div>
 
 
-<div class = "addtoE"> 
-<button onclick = "addtoE ()"> Add to ending</button>
+<div class = "addtoP"> 
+<button onclick = "addtoP ()"> Add to ending</button>
 
 </div>
 
@@ -190,14 +190,14 @@ document.getElementById("messagecenter").innerHTML = memory;
 </div>
 
 
-<div class = "deletefromM"> 
+<div class = "deletefromN"> 
 <button onclick = ""> Delete from middle </button>
 
 </div>
 
 
-<div class = "deletefromE">  
-<button onclick = "deletefromE()"> Delete from ending</button>
+<div class = "deletefromP">  
+<button onclick = "deletefromP()"> Delete from ending</button>
 
 </div>
 
